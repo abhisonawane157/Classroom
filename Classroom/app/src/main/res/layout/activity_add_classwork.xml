@@ -1,0 +1,126 @@
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/yellow"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <LinearLayout
+            android:id="@+id/linear1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="2dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:orientation="vertical">
+            <TextView
+                android:text="Class Work"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:fontFamily="casual"
+                android:layout_marginBottom="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="4dp"
+                android:enabled="false"
+                android:layout_marginLeft="4dp"
+                app:boxStrokeColor="#000000"
+                android:textColorHint="#000000"
+                android:textColorHighlight="#000000"
+                android:layout_marginBottom="8dp">
+                <EditText android:id="@+id/roomid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:enabled="false"
+                    android:textColor="#000000"
+                    android:fontFamily="casual"
+                    android:inputType="text"
+                    android:hint="Room ID" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="4dp"
+                android:layout_marginLeft="4dp"
+                app:boxStrokeColor="#000000"
+                android:textColorHint="#000000"
+                android:textColorHighlight="#000000"
+                android:layout_marginBottom="8dp">
+                <EditText android:id="@+id/classworkid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:fontFamily="casual"
+                    android:inputType="text"
+                    android:hint="Classwork ID" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="4dp"
+                android:layout_marginLeft="4dp"
+                app:boxStrokeColor="#000000"
+                android:textColorHint="#000000"
+                android:textColorHighlight="#000000"
+                android:layout_marginBottom="8dp">
+                <EditText android:id="@+id/classworkname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:fontFamily="casual"
+                    android:inputType="text"
+                    android:hint="Classwork name(required)" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="4dp"
+                android:layout_marginLeft="4dp"
+                app:boxStrokeColor="#000000"
+                android:textColorHint="#000000"
+                android:textColorHighlight="#000000"
+                android:layout_marginBottom="8dp">
+                <EditText android:id="@+id/subject"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:fontFamily="casual"
+                    android:inputType="text"
+                    android:hint="Subject" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+
+
+
+            </LinearLayout>
+            <Button
+                android:id="@+id/submit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Submit"
+                android:textStyle="bold"
+                android:fontFamily="casual"
+                android:textSize="14sp"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
